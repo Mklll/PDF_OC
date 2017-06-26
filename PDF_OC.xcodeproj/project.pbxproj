@@ -14,6 +14,8 @@
 		EBA8E0981EFF79200009E3B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E0961EFF79200009E3B3 /* Main.storyboard */; };
 		EBA8E09A1EFF79200009E3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E0991EFF79200009E3B3 /* Assets.xcassets */; };
 		EBA8E09D1EFF79200009E3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E09B1EFF79200009E3B3 /* LaunchScreen.storyboard */; };
+		EBD809561F014B1C003A2889 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD809531F014B1C003A2889 /* HTTPServer.m */; };
+		EBD809571F014B1C003A2889 /* HTTPResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD809551F014B1C003A2889 /* HTTPResponseHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		EBA8E0991EFF79200009E3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBA8E09C1EFF79200009E3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBA8E09E1EFF79200009E3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD809521F014B1C003A2889 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = ../../XiaoX/XiaoX/HTTPServer.h; sourceTree = "<group>"; };
+		EBD809531F014B1C003A2889 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = ../../XiaoX/XiaoX/HTTPServer.m; sourceTree = "<group>"; };
+		EBD809541F014B1C003A2889 /* HTTPResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseHandler.h; path = ../../XiaoX/XiaoX/HTTPResponseHandler.h; sourceTree = "<group>"; };
+		EBD809551F014B1C003A2889 /* HTTPResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseHandler.m; path = ../../XiaoX/XiaoX/HTTPResponseHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 				EBA8E0911EFF79200009E3B3 /* AppDelegate.m */,
 				EBA8E0931EFF79200009E3B3 /* ViewController.h */,
 				EBA8E0941EFF79200009E3B3 /* ViewController.m */,
+				EBD809511F014AFA003A2889 /* Server */,
 				EBA8E0961EFF79200009E3B3 /* Main.storyboard */,
 				EBA8E0991EFF79200009E3B3 /* Assets.xcassets */,
 				EBA8E09B1EFF79200009E3B3 /* LaunchScreen.storyboard */,
@@ -101,6 +108,17 @@
 				EBA8E08E1EFF79200009E3B3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBD809511F014AFA003A2889 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				EBD809541F014B1C003A2889 /* HTTPResponseHandler.h */,
+				EBD809551F014B1C003A2889 /* HTTPResponseHandler.m */,
+				EBD809521F014B1C003A2889 /* HTTPServer.h */,
+				EBD809531F014B1C003A2889 /* HTTPServer.m */,
+			);
+			name = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FF9D0D88EE931826C755585F /* [CP] Copy Pods Resources */ = {
@@ -226,8 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD809571F014B1C003A2889 /* HTTPResponseHandler.m in Sources */,
 				EBA8E0951EFF79200009E3B3 /* ViewController.m in Sources */,
 				EBA8E0921EFF79200009E3B3 /* AppDelegate.m in Sources */,
+				EBD809561F014B1C003A2889 /* HTTPServer.m in Sources */,
 				EBA8E08F1EFF79200009E3B3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +411,7 @@
 				EBA8E0A31EFF79200009E3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
