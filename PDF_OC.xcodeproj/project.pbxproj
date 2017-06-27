@@ -16,6 +16,9 @@
 		EBA8E09D1EFF79200009E3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E09B1EFF79200009E3B3 /* LaunchScreen.storyboard */; };
 		EBD809561F014B1C003A2889 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD809531F014B1C003A2889 /* HTTPServer.m */; };
 		EBD809571F014B1C003A2889 /* HTTPResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD809551F014B1C003A2889 /* HTTPResponseHandler.m */; };
+		EBD8095A1F02A670003A2889 /* PDFVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD809581F02A670003A2889 /* PDFVC.m */; };
+		EBD8095D1F02A728003A2889 /* C程序设计语言(K&amp;R)清晰中文版.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EBD8095B1F02A728003A2889 /* C程序设计语言(K&amp;R)清晰中文版.pdf */; };
+		EBD8095F1F02A795003A2889 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8095E1F02A789003A2889 /* PDFKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		EBD809531F014B1C003A2889 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = ../../XiaoX/XiaoX/HTTPServer.m; sourceTree = "<group>"; };
 		EBD809541F014B1C003A2889 /* HTTPResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseHandler.h; path = ../../XiaoX/XiaoX/HTTPResponseHandler.h; sourceTree = "<group>"; };
 		EBD809551F014B1C003A2889 /* HTTPResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseHandler.m; path = ../../XiaoX/XiaoX/HTTPResponseHandler.m; sourceTree = "<group>"; };
+		EBD809581F02A670003A2889 /* PDFVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFVC.m; path = "../../PDF Viewer/PDF Viewer/PDFVC.m"; sourceTree = "<group>"; };
+		EBD809591F02A670003A2889 /* PDFVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFVC.h; path = "../../PDF Viewer/PDF Viewer/PDFVC.h"; sourceTree = "<group>"; };
+		EBD8095C1F02A728003A2889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Base; path = "../../PDF Viewer/PDF Viewer/Base.lproj/C程序设计语言(K&amp;R)清晰中文版.pdf"; sourceTree = "<group>"; };
+		EBD8095E1F02A789003A2889 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8095F1F02A795003A2889 /* PDFKit.framework in Frameworks */,
 				7F3EBA9D6A5FF0A3CAC06D8A /* libPods-PDF_OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +70,7 @@
 		C78B164A702B715A7B4F3979 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBD8095E1F02A789003A2889 /* PDFKit.framework */,
 				D9A26A6FB0961B62850BF7E6 /* libPods-PDF_OC.a */,
 			);
 			name = Frameworks;
@@ -92,6 +101,8 @@
 				EBA8E0911EFF79200009E3B3 /* AppDelegate.m */,
 				EBA8E0931EFF79200009E3B3 /* ViewController.h */,
 				EBA8E0941EFF79200009E3B3 /* ViewController.m */,
+				EBD809591F02A670003A2889 /* PDFVC.h */,
+				EBD809581F02A670003A2889 /* PDFVC.m */,
 				EBD809511F014AFA003A2889 /* Server */,
 				EBA8E0961EFF79200009E3B3 /* Main.storyboard */,
 				EBA8E0991EFF79200009E3B3 /* Assets.xcassets */,
@@ -105,6 +116,7 @@
 		EBA8E08D1EFF79200009E3B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBD8095B1F02A728003A2889 /* C程序设计语言(K&amp;R)清晰中文版.pdf */,
 				EBA8E08E1EFF79200009E3B3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -183,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8095D1F02A728003A2889 /* C程序设计语言(K&amp;R)清晰中文版.pdf in Resources */,
 				EBA8E09D1EFF79200009E3B3 /* LaunchScreen.storyboard in Resources */,
 				EBA8E09A1EFF79200009E3B3 /* Assets.xcassets in Resources */,
 				EBA8E0981EFF79200009E3B3 /* Main.storyboard in Resources */,
@@ -247,6 +260,7 @@
 				EBD809571F014B1C003A2889 /* HTTPResponseHandler.m in Sources */,
 				EBA8E0951EFF79200009E3B3 /* ViewController.m in Sources */,
 				EBA8E0921EFF79200009E3B3 /* AppDelegate.m in Sources */,
+				EBD8095A1F02A670003A2889 /* PDFVC.m in Sources */,
 				EBD809561F014B1C003A2889 /* HTTPServer.m in Sources */,
 				EBA8E08F1EFF79200009E3B3 /* main.m in Sources */,
 			);
@@ -269,6 +283,14 @@
 				EBA8E09C1EFF79200009E3B3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EBD8095B1F02A728003A2889 /* C程序设计语言(K&amp;R)清晰中文版.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD8095C1F02A728003A2889 /* Base */,
+			);
+			name = "C程序设计语言(K&amp;R)清晰中文版.pdf";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
