@@ -35,10 +35,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifierString = @"tableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierString];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
-//                                     reuseIdentifier:identifierString];
-//    }
     cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
